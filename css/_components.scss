@@ -84,7 +84,7 @@
         left: 0px;
         height: .1rem;
         width: 100%;
-        transform: scale3d(-100%, 0, 0);
+        transform: scaleX(100%);
         transform-origin: left center;
         background: rgba(var(--clr-white), 1);
     }

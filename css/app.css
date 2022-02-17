@@ -1111,8 +1111,8 @@ section {
   left: 0px;
   height: .1rem;
   width: 100%;
-  -webkit-transform: scale3d(-100%, 0, 0);
-          transform: scale3d(-100%, 0, 0);
+  -webkit-transform: scaleX(100%);
+          transform: scaleX(100%);
   -webkit-transform-origin: left center;
           transform-origin: left center;
   background: rgba(var(--clr-white), 1);
