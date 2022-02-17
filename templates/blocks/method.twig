@@ -1,0 +1,55 @@
+<section class="method">
+    <div class="grid">
+        {% set method_introduction = post.meta('group') %}
+        <div class="tag">
+            <h2 class="tag__title">{{fields.method_introduction.title}}</h2>
+            <div class="tag__underline"></div>
+        </div>
+        <div class="method__introduction">
+            <h2 class="heading">{{fields.method_introduction.heading}}</h2>
+            <a href="{{fields.method_introduction.button.url}}" class="button">
+                <i class="button__icon" data-feather="arrow-right-circle"></i>
+                <span class="button__text">{{fields.method_introduction.button.title}}</span>
+            </a>
+        </div>
+    </div>
+    <div class="flex flex--no-padding column-reverse-lg">
+        <div class="method__item method__item--large">
+            {% set method_item_large = post.meta('group') %}
+            <img class="method__item-image" src="{{Image(fields.method_item_large.image).src}}" alt="" />
+            <div class="method__item-content">
+                <div class="tag tag--primary">
+                    <h2 class="tag__title">{{fields.method_item_large.tag}}</h2>
+                    <div class="tag__underline"></div>
+                </div>
+                <div class="method__item-text">
+                    <h3 class="method__item-heading">{{fields.method_item_large.title}}</h3>
+                    <p class="method__item-summary">{{fields.method_item_large.text}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="method__text">
+            <p class="text">Our approach combines strategy, design, data science and engineering to develop new tools to understand the way things are and how they could be.</p>
+        </div>
+    </div>
+
+    {% for item in fields.method_items %}
+
+        <div class="flex no-padding-lg">
+            <div class="method__item {% if loop.index is odd %} method__item--end {% endif %}">
+                <img class="method__item-image" src="{{Image(item.image).src}}" alt="" />
+                <div class="method__item-content">
+                    <div class="tag tag--secondary">
+                        <h2 class="tag__title">{{item.tag}}</h2>
+                        <div class="tag__underline"></div>
+                    </div>
+                    <div class="method__item-text">
+                        <h3 class="method__item-heading">{{item.title}}</h3>
+                        <p class="method__item-summary">{{item.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+</section>

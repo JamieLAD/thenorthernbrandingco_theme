@@ -1,0 +1,22 @@
+<footer class="footer">
+
+    {% for item in options.footer_items %}
+
+      <div class="grid footer__item">
+          <div class="tag">
+              <h2 class="tag__title">{{item.title}}</h2>
+              <div class="tag__underline"></div>
+          </div>
+          <div class="footer__item-text">
+              <div class="text text--large">
+                  {{item.text}}
+              </div>
+          </div>
+      </div>
+
+    {% endfor %}
+
+    <div class="grid">
+        <p class="footer__copyright">{{options.footer_copyright}}</p>
+    </div>
+</footer>

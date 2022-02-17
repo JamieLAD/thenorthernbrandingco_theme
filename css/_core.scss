@@ -1,0 +1,103 @@
+:root {
+    --clr-background: 0, 0, 0;
+    --clr-text: 150, 150, 150;
+    --clr-white: 255, 255, 255;
+    --clr-footer: 16, 16, 16;
+    --primary-ff: 'Inter', Arial, sans-serif;
+    --secondary-ff: 'EB Garamond', 'Inter', Arial, sans-serif;
+    --transition: .3s ease-in-out;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(var(--clr-background), 1);
+    color: rgba(var(--clr-text), 1);
+    font-size: 1.8rem;
+    font-family: var(--primary-ff);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text {
+    font-size: 2.4rem;
+    line-height: 1.5em;
+    max-width: 65rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 425px) {
+        font-size: 2rem;
+    }
+
+    &--large {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        color: rgba(var(--clr-white), 1);
+        margin-bottom: 0;
+
+        @media only screen and (max-width: 425px) {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.heading {
+    color: rgba(var(--clr-white), 1);
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 1.4em;
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: 425px) {
+        font-size: 3rem;
+    }
+}
+
+.feather {
+    stroke-width: .1rem;
+}
+
+@keyframes rotation {
+
+    from {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(5deg);
+    }
+
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 8vw 18vw auto 8vw;
+    grid-auto-rows: auto;
+    align-items: center;
+
+    @media only screen and (max-width: 1440px) {
+        grid-template-columns: 7.8rem 20vw auto 7.8rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 5rem auto 5rem;
+    }
+
+    @media only screen and (max-width: 425px) {
+        grid-template-columns: 3rem auto 3rem;
+    }
+}

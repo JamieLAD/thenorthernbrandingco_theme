@@ -1,0 +1,23 @@
+<section class="project">
+    <div class="flex">
+        <div class="tag">
+            <h2 class="tag__title">{{fields.project_title}}</h2>
+            <div class="tag__underline"></div>
+        </div>
+        <div class="project__introduction">
+            <h2 class="heading">{{fields.project_heading}}</h2>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="project__content">
+            <div class="project__text">
+                <p class="text">{{fields.project_text}}</p>
+            </div>
+            <a href="{{fields.project_button.url}}" class="button">
+                <i class="button__icon" data-feather="arrow-right-circle"></i>
+                <span class="button__text">{{fields.project_button.title}}</span>
+            </a>
+        </div>
+    </div>
+    <img src="{{ site.url }}/wp-content/uploads/2022/02/waves.png" alt="" class="project__background" />
+</section>

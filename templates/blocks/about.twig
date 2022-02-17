@@ -1,0 +1,23 @@
+<section class="about">
+    <div class="grid">
+        <div class="tag">
+            <div class="tag__title">{{fields.about_title}}</div>
+            <div class="tag__underline"></div>
+        </div>
+        <div class="about__text">
+            <p class="text">{{fields.about_text}}</p>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="about__video-container">
+            <video class="about__video" loop autoplay muted><source src="{{fields.about_video}}" type="video/mp4"></video>
+        </div>
+        <div class="about__introduction">
+            <h2 class="heading">{{fields.about_heading}}</h2>
+            <a href="{{fields.about_button.url}}" class="button">
+                <i class="button__icon" data-feather="arrow-right-circle"></i>
+                <span class="button__text">{{fields.about_button.title}}</span>
+            </a>
+        </div>
+    </div>
+</section>
