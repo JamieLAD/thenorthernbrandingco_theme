@@ -124,6 +124,10 @@ section {
         min-height: 40rem;
     }
 
+    .grid {
+        position: relative;
+    }
+
     &__title,
     &__subtitle {
         font-size: 6rem;
@@ -187,8 +191,9 @@ section {
         left: 0;
         top: 0;
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        height: 100vh;
+        object-fit: cover;
+        opacity: .5;
     }
 } 
 

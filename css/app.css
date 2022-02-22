@@ -624,6 +624,10 @@ section {
   }
 }
 
+.hero .grid {
+  position: relative;
+}
+
 .hero__title, .hero__subtitle {
   font-size: 6rem;
   font-weight: 400;
@@ -703,9 +707,10 @@ section {
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .5;
 }
 
 .hero-alt {
