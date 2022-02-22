@@ -7,7 +7,7 @@
 
 	<body class="{{body_class}}" data-template="base.twig">
 
-		<main id="butter" class="app">
+		<main class="app">
 
 			{% block header %}
 				{% include 'header.twig' %}
@@ -19,7 +19,6 @@
 
 			{% block footer %}
 				{% include 'footer.twig' %}
-				{{ function('wp_footer') }}
 			{% endblock %}
 
 		</main>
@@ -29,5 +28,35 @@
 			<div class="guide"></div>
 		</div>
 		
+		<nav class="offscreen-nav" role="navigation">
+			<div class="offscreen-nav__container">
+			{% for item in navigation.get_items %}
+				{% if 'Contact' in item.title %}
+				<div class="offscreen-nav__item contact">
+				{% else %}
+				<div class="offscreen-nav__item">
+				{% endif %}
+					<span class="offscreen-nav__number">
+						{% if loop.index < 10 %}
+							0{{loop.index}}
+						{% else %}
+							{{loop.index}}
+						{% endif %}
+					</span>
+					<a class="offscreen-nav__link" target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+					{% if 'Contact' in item.title %}
+						<div class="offscreen-nav__contact">
+							{% for footer_item in options.footer_items %}
+								<p class="offscreen-nav__text">{{footer_item.text}}</p>
+							{% endfor %}
+						</div>
+					{% endif %}
+				</div>
+			{% endfor %}
+			</div>
+		</nav>
+
+		{{ function('wp_footer') }}
+
 	</body>
 </html>

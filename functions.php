@@ -221,7 +221,7 @@ class TheNorthernBrandingCo extends Timber\Site {
 				'title'				=> __('About'),
 				'description'		=> __('About Block.'),
 				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
-				'keywords'			=> array('features'),
+				'keywords'			=> array('about'),
 			));
 
 			acf_register_block(array(
@@ -229,7 +229,7 @@ class TheNorthernBrandingCo extends Timber\Site {
 				'title'				=> __('Method'),
 				'description'		=> __('Method Block.'),
 				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
-				'keywords'			=> array('reviews'),
+				'keywords'			=> array('method'),
 			));
 
 			acf_register_block(array(
@@ -237,7 +237,39 @@ class TheNorthernBrandingCo extends Timber\Site {
 				'title'				=> __('Project'),
 				'description'		=> __('Project Block.'),
 				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
-				'keywords'			=> array('pricing'),
+				'keywords'			=> array('project'),
+			));
+
+			acf_register_block(array(
+				'name'				=> 'acf_text',
+				'title'				=> __('Text Block'),
+				'description'		=> __('Text Block.'),
+				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
+				'keywords'			=> array('acf_text'),
+			));
+
+			acf_register_block(array(
+				'name'				=> 'acf_image',
+				'title'				=> __('Image Block'),
+				'description'		=> __('Image Block.'),
+				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
+				'keywords'			=> array('acf_image'),
+			));
+
+			acf_register_block(array(
+				'name'				=> 'title-and-text',
+				'title'				=> __('Title and Text'),
+				'description'		=> __('Title and Text Block.'),
+				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
+				'keywords'			=> array('title-and-text'),
+			));
+
+			acf_register_block(array(
+				'name'				=> 'hero-alt',
+				'title'				=> __('Alternative Hero'),
+				'description'		=> __('Alternative Hero Block.'),
+				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
+				'keywords'			=> array('hero-alt'),
 			));
 
 		}

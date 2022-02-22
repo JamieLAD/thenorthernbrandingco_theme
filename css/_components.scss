@@ -129,6 +129,14 @@
             @media only screen and (max-width: 1440px) {
                 left: calc(7.8rem + 20vw);
             }
+
+            @media only screen and (max-width: 768px) {
+                left: calc(5rem + 20vw);
+            }
+
+            @media only screen and (max-width: 425px) {
+                left: calc(3rem + 20vw);
+            }
         }
     }
 }
