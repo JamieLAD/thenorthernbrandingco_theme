@@ -241,19 +241,19 @@ class TheNorthernBrandingCo extends Timber\Site {
 			));
 
 			acf_register_block(array(
-				'name'				=> 'acf_text',
+				'name'				=> 'text_block',
 				'title'				=> __('Text Block'),
 				'description'		=> __('Text Block.'),
 				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
-				'keywords'			=> array('acf_text'),
+				'keywords'			=> array('text_block'),
 			));
 
 			acf_register_block(array(
-				'name'				=> 'acf_image',
+				'name'				=> 'image_block',
 				'title'				=> __('Image Block'),
 				'description'		=> __('Image Block.'),
 				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
-				'keywords'			=> array('acf_image'),
+				'keywords'			=> array('image_block'),
 			));
 
 			acf_register_block(array(
