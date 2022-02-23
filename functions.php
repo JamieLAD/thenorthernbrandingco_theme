@@ -241,7 +241,7 @@ class TheNorthernBrandingCo extends Timber\Site {
 			));
 
 			acf_register_block(array(
-				'name'				=> 'nb_text',
+				'name'				=> 'nb-text',
 				'title'				=> __('Text Section'),
 				'description'		=> __('Text Section.'),
 				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
@@ -249,7 +249,7 @@ class TheNorthernBrandingCo extends Timber\Site {
 			));
 
 			acf_register_block(array(
-				'name'				=> 'nb_image',
+				'name'				=> 'nb-image',
 				'title'				=> __('Image Section'),
 				'description'		=> __('Image Section.'),
 				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
