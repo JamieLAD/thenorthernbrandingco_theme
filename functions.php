@@ -272,6 +272,14 @@ class TheNorthernBrandingCo extends Timber\Site {
 				'keywords'			=> array('hero-alt'),
 			));
 
+			acf_register_block(array(
+				'name'				=> 'synth',
+				'title'				=> __('Synth'),
+				'description'		=> __('Synth Block.'),
+				'render_callback'	=> array( $this, 'my_acf_block_render_callback'),
+				'keywords'			=> array('synth'),
+			));
+
 		}
 	}
 

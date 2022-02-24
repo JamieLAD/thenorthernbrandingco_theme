@@ -31,11 +31,19 @@
 		<nav class="offscreen-nav" role="navigation">
 			<div class="offscreen-nav__container">
 			{% for item in navigation.get_items %}
+
 				{% if 'Contact' in item.title %}
-				<div class="offscreen-nav__item contact">
-				{% else %}
-				<div class="offscreen-nav__item">
+					<div class="offscreen-nav__item contact">
+					{% else %}
+					<div class="offscreen-nav__item">
 				{% endif %}
+
+				{% if 'Home' in item.title %}
+					<a class="offscreen-nav__link" target="{{ item.target }}" href="{{ item.link }}">
+						<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="none" viewBox="0 0 39 39"><circle cx="19.5" cy="19.5" r="19" stroke="#fff"></circle><path stroke="#fff" d="M13 25.5v-9l6.5-5.5 6.5 5.5v9"></path></svg>
+					</a>
+				{% else %}
+
 					<span class="offscreen-nav__number">
 						{% if loop.index < 10 %}
 							0{{loop.index}}
@@ -51,10 +59,31 @@
 							{% endfor %}
 						</div>
 					{% endif %}
+
+				{% endif %}
 				</div>
+
 			{% endfor %}
 			</div>
+			<div class="offscreen-nav__guides">
+				<div class="offscreen-nav__guide"></div>
+				<div class="offscreen-nav__guide"></div>
+				<div class="offscreen-nav__guide"></div>
+				<div class="offscreen-nav__guide"></div>
+			</div>
 		</nav>
+
+		<div class="scroller">
+			<div class="scroller__bar">
+				<div class="scroller__progress"></div>
+			</div>
+		</div>
+
+		<div class="loader">
+			<div class="loader__bar">
+				<div class="loader__progress"></div>
+			</div>
+		</div>
 
 		{{ function('wp_footer') }}
 

@@ -19,6 +19,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
     color: rgba(var(--clr-text), 1);
     font-size: 1.8rem;
     font-family: var(--primary-ff);
+    overflow-x: hidden;
 }
 
 a {
