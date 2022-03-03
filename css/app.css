@@ -799,7 +799,7 @@ section {
     grid-area: 1 / 1 / auto / 5;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    max-height: 30rem;
+    max-height: 40rem;
   }
 }
 
@@ -1144,6 +1144,15 @@ section {
 
 .footer .text--large {
   color: rgba(var(--clr-white), 1) !important;
+}
+
+@media only screen and (max-width: 470px) {
+  .footer .text {
+    font-size: 2rem;
+  }
+  .footer .text--large {
+    font-size: 2rem;
+  }
 }
 
 .footer .tag {

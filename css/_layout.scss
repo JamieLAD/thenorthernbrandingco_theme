@@ -227,7 +227,7 @@ section {
         @media only screen and (max-width: 470px) {
             grid-area: 1 / 1 / auto / 5;
             align-self: flex-start;
-            max-height: 30rem;
+            max-height: 40rem;
         }
     }
 
@@ -490,6 +490,14 @@ section {
 
         &--large {
             color: rgba(var(--clr-white), 1) !important;
+        }
+
+        @media only screen and (max-width: 470px) {
+            font-size: 2rem;
+
+            &--large {
+                font-size: 2rem;
+            }
         }
     }
 
