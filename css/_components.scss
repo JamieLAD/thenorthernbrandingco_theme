@@ -11,7 +11,7 @@
         height: $size;
         transition: var(--transition);
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 470px) {
             $size: 3rem;
         }
     }
@@ -25,7 +25,7 @@
         font-size: 3.2rem;
         font-weight: 200;
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 470px) {
             font-size: 2rem;
         }
 
@@ -134,7 +134,7 @@
                 left: calc(5rem + 20vw);
             }
 
-            @media only screen and (max-width: 425px) {
+            @media only screen and (max-width: 470px) {
                 left: calc(3rem + 20vw);
             }
         }

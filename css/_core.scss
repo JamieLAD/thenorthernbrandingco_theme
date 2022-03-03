@@ -77,7 +77,7 @@ a {
     max-width: 65rem;
     margin-bottom: 2rem;
 
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 470px) {
         font-size: 2rem;
     }
 
@@ -87,7 +87,7 @@ a {
         color: rgba(var(--clr-white), 1);
         margin-bottom: 0;
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 470px) {
             font-size: 2.2rem;
         }
     }
@@ -104,7 +104,7 @@ a {
     line-height: 1.4em;
     margin-bottom: 4rem;
 
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 470px) {
         font-size: 3rem;
     }
 }
@@ -139,7 +139,7 @@ a {
         grid-template-columns: 5rem auto 5rem;
     }
 
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 470px) {
         grid-template-columns: 3rem auto 3rem;
     }
 }

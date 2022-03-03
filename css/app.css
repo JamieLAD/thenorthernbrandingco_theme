@@ -81,7 +81,7 @@ a {
   margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 470px) {
   .text {
     font-size: 2rem;
   }
@@ -94,7 +94,7 @@ a {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 470px) {
   .text--large {
     font-size: 2.2rem;
   }
@@ -112,7 +112,7 @@ a {
   margin-bottom: 4rem;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 470px) {
   .heading {
     font-size: 3rem;
   }
@@ -512,7 +512,7 @@ template {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 470px) {
   .grid {
     -ms-grid-columns: 3rem auto 3rem;
         grid-template-columns: 3rem auto 3rem;
@@ -976,7 +976,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 1440px) and (max-width: 425px) {
+@media only screen and (max-width: 1440px) and (max-width: 470px) {
   .method__text {
     -ms-grid-columns: 3rem auto 3rem;
         grid-template-columns: 3rem auto 3rem;
@@ -1078,7 +1078,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 1024px) and (max-width: 425px) {
+@media only screen and (max-width: 1024px) and (max-width: 470px) {
   .project .flex {
     -ms-grid-columns: 3rem auto 3rem;
         grid-template-columns: 3rem auto 3rem;
@@ -1600,7 +1600,7 @@ section {
   font-weight: 200;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 470px) {
   .button__text {
     font-size: 2rem;
   }
@@ -1723,7 +1723,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 470px) {
   .guides .guide:nth-child(2) {
     left: calc(3rem + 20vw);
   }
@@ -1841,7 +1841,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 1440px) and (max-width: 425px) {
+@media only screen and (max-width: 1440px) and (max-width: 470px) {
   .method__item {
     -ms-grid-columns: 3rem auto 3rem;
         grid-template-columns: 3rem auto 3rem;
