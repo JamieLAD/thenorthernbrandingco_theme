@@ -23,11 +23,47 @@ html {
 }
 
 body {
-    background-color: rgba(var(--clr-background), 1);
-    color: rgba(var(--clr-text), 1);
     font-size: 1.8rem;
     font-family: var(--primary-ff);
     overflow-x: hidden;
+
+    &.dark-page {
+        color: rgba(var(--clr-text), 1);
+        background-color: rgba(var(--clr-background), 1);
+        
+        .text {
+            color: rgba(var(--clr-text), 1);
+
+            &--large {
+                color: rgba(var(--clr-white), 1);
+            }
+        }
+
+        .heading {
+            color: rgba(var(--clr-white), 1);
+        }
+    }
+
+    &.white-page {
+        background-color: rgba(var(--clr-white), 1);
+        color: rgba(var(--clr-background), 1);
+
+        .text {
+            color: rgba(var(--clr-background), 1);
+
+            &--large {
+                color: rgba(var(--clr-background), 1);
+            }
+        }
+
+        .heading {
+            color: rgba(var(--clr-background), 1);
+        }
+    }
+
+    .header {
+        background: linear-gradient(black 0%, rgba(0, 0, 0, 0.737) 19%, rgba(0, 0, 0, 0.54) 34%, rgba(0, 0, 0, 0.38) 47%, rgba(0, 0, 0, 0.28) 56.5%, rgba(0, 0, 0, 0.192) 65%, rgba(0, 0, 0, 0.125) 73%, rgba(0, 0, 0, 0.075) 80.2%, rgba(0, 0, 0, 0.043) 86.1%, rgba(0, 0, 0, 0.02) 91%, rgba(0, 0, 0, 0.008) 95.2%, rgba(0, 0, 0, 0.004) 98.2%, transparent 100%);
+    }
 }
 
 a {
