@@ -409,7 +409,6 @@ section {
 
     &__image {
         height: 100%;
-        max-height: 30rem;
 
         &:nth-of-type(2) {
             filter: blur(10px);
@@ -420,6 +419,10 @@ section {
             top: 0px;
             left: 0px;
             width: 100%;
+        }
+
+        @media only screen and (max-width: 470px) {
+            max-height: 30rem;
         }
     }
 
