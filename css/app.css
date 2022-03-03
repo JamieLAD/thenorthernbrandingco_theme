@@ -771,6 +771,7 @@ section {
 @media only screen and (max-width: 470px) {
   .hero-alt {
     min-height: 40rem;
+    padding-bottom: 12rem;
   }
 }
 
@@ -796,6 +797,9 @@ section {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-area: 1 / 1 / auto / 5;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    max-height: 30rem;
   }
 }
 
@@ -812,13 +816,13 @@ section {
 
 @media only screen and (max-width: 1440px) {
   .hero-alt__title {
-    font-size: 4.8rem;
+    font-size: 7rem;
   }
 }
 
 @media only screen and (max-width: 470px) {
   .hero-alt__title {
-    font-size: 3.2rem;
+    font-size: 5rem;
   }
 }
 
