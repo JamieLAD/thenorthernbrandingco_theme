@@ -29,7 +29,7 @@
     </div>
 
     <div class="grid">
-        {% set socials = post.meta('social_links') %}
+        {% set socials = options.social_links %}
         <nav class="social-links">
             {% if socials.facebook_link.url %}
                 <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="facebook"></i></a>
