@@ -31,19 +31,19 @@
     <div class="grid">
         {% set socials = post.meta('social_links') %}
         <nav class="social-links">
-            {% if options.socials.facebook_link.url %}
+            {% if socials.facebook_link.url %}
                 <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="facebook"></i></a>
             {% endif %}
 
-            {% if options.socials.instagram_link.url %}
+            {% if socials.instagram_link.url %}
                 <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="instagram"></i></a>
             {% endif %}
 
-            {% if options.socials.linkedin_link.url %}
+            {% if socials.linkedin_link.url %}
                 <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="linkedin"></i></a>
             {% endif %}
 
-            {% if options.socials.youtube_link.url %}
+            {% if socials.youtube_link.url %}
                 <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="youtube"></i></a>
             {% endif %}
         </nav>
