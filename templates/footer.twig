@@ -29,22 +29,21 @@
     </div>
 
     <div class="grid">
-        {% set socials = options.social_links %}
         <nav class="social-links">
-            {% if socials.facebook_link.url %}
-                <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="facebook"></i></a>
+            {% if options.facebook_link.url %}
+                <a class="social-links__link" target="{{ facebook_link.target }}" href="{{ facebook_link.link }}"><i class="social-links__icon" data-feather="facebook"></i></a>
             {% endif %}
 
-            {% if socials.instagram_link.url %}
-                <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="instagram"></i></a>
+            {% if options.instagram_link.url %}
+                <a class="social-links__link" target="{{ instagram_link.target }}" href="{{ instagram_link.link }}"><i class="social-links__icon" data-feather="instagram"></i></a>
             {% endif %}
 
-            {% if socials.linkedin_link.url %}
-                <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="linkedin"></i></a>
+            {% if options.linkedin_link.url %}
+                <a class="social-links__link" target="{{ linkedin_link.target }}" href="{{ linkedin_link.link }}"><i class="social-links__icon" data-feather="linkedin"></i></a>
             {% endif %}
 
-            {% if socials.youtube_link.url %}
-                <a class="social-links__link" target="{{ item.target }}" href="{{ item.link }}"><i class="social-links__icon" data-feather="youtube"></i></a>
+            {% if options.youtube_link.url %}
+                <a class="social-links__link" target="{{ youtube_link.target }}" href="{{ youtube_link.link }}"><i class="social-links__icon" data-feather="youtube"></i></a>
             {% endif %}
         </nav>
     </div>
