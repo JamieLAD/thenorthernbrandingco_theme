@@ -30,10 +30,21 @@
 
     <div class="grid">
         <nav class="social-links">
-            <a class="social-links__link" target="{{ facebook_link.target }}" href="{{ facebook_link.link }}"><i class="social-links__icon" data-feather="facebook"></i></a>
-            <a class="social-links__link" target="{{ instagram_link.target }}" href="{{ instagram_link.link }}"><i class="social-links__icon" data-feather="instagram"></i></a>
-            <a class="social-links__link" target="{{ linkedin_link.target }}" href="{{ linkedin_link.link }}"><i class="social-links__icon" data-feather="linkedin"></i></a>
-            <a class="social-links__link" target="{{ youtube_link.target }}" href="{{ youtube_link.link }}"><i class="social-links__icon" data-feather="youtube"></i></a>
+            {% if options.facebook_link.link %}
+                <a class="social-links__link" target="{{ facebook_link.target }}" href="{{ facebook_link.link }}"><i class="social-links__icon" data-feather="facebook"></i></a>
+            {% endif %}
+
+            {% if options.instagram_link.link %}
+                <a class="social-links__link" target="{{ instagram_link.target }}" href="{{ instagram_link.link }}"><i class="social-links__icon" data-feather="instagram"></i></a>
+            {% endif %}
+
+            {% if options.linkedin_link.link %}
+                <a class="social-links__link" target="{{ linkedin_link.target }}" href="{{ linkedin_link.link }}"><i class="social-links__icon" data-feather="linkedin"></i></a>
+            {% endif %}
+
+            {% if options.youtube_link.link %}
+                <a class="social-links__link" target="{{ youtube_link.target }}" href="{{ youtube_link.link }}"><i class="social-links__icon" data-feather="youtube"></i></a>
+            {% endif %}
         </nav>
     </div>
 </footer>
