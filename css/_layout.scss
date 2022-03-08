@@ -520,6 +520,11 @@ section {
         align-items: center;
         justify-content: flex-start;
         gap: 3rem;
+
+        @media only screen and (max-width: 768px) {
+            grid-area: 1 / 2 / auto / auto;
+            margin-bottom: 3rem;
+        }
     }
 
     .social-links {
@@ -527,6 +532,11 @@ section {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        gap: 3rem;
+
+        @media only screen and (max-width: 768px) {
+            grid-area: 1 / 2 / auto / auto;
+        }
     }
 
     .text {

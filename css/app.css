@@ -1201,6 +1201,13 @@ section {
   gap: 3rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer .legal-links {
+    grid-area: 1 / 2 / auto / auto;
+    margin-bottom: 3rem;
+  }
+}
+
 .footer .social-links {
   grid-area: 1 / 4 / auto / auto;
   display: -webkit-box;
@@ -1212,6 +1219,13 @@ section {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .social-links {
+    grid-area: 1 / 2 / auto / auto;
+  }
 }
 
 .footer .text--large {
