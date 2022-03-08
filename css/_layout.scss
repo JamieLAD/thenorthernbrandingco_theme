@@ -495,6 +495,40 @@ section {
         }
     }
 
+    &--grid {
+        display: grid;
+        grid-template-columns: 8vw 18vw auto 18vw 8vw;
+        grid-auto-rows: auto;
+        align-items: center;
+
+        @media only screen and (max-width: 1440px) {
+            grid-template-columns: 7.8rem 20vw auto 20vw 7.8rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: 5rem auto 5rem;
+        }
+
+        @media only screen and (max-width: 470px) {
+            grid-template-columns: 3rem auto 3rem;
+        }
+    }
+
+    .legal-links {
+        grid-area: 1 / 3 / auto / auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .social-links {
+        grid-area: 1 / 4 / auto / auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
     .text {
 
         &--large {

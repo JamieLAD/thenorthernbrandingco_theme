@@ -20,15 +20,12 @@
         <p class="footer__copyright">{{options.footer_copyright}}</p>
     </div>
 
-    <div class="grid">
+    <div class="grid grid--footer">
         <nav class="legal-links">
             {% for item in legal_links.get_items %}
                 <a class="legal-links__link" target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
             {% endfor %}
         </nav>
-    </div>
-
-    <div class="grid">
         <nav class="social-links">
             <a class="social-links__link" target="{{ facebook_link.target }}" href="{{ facebook_link.link }}"><i class="social-links__icon" data-feather="facebook"></i></a>
             <a class="social-links__link" target="{{ instagram_link.target }}" href="{{ instagram_link.link }}"><i class="social-links__icon" data-feather="instagram"></i></a>
