@@ -1225,6 +1225,9 @@ section {
 @media only screen and (max-width: 768px) {
   .footer .social-links {
     grid-area: 2 / 2 / auto / auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 

@@ -536,6 +536,7 @@ section {
 
         @media only screen and (max-width: 768px) {
             grid-area: 2 / 2 / auto / auto;
+            justify-content: flex-start;
         }
     }
 
