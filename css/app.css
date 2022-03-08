@@ -1155,7 +1155,7 @@ section {
   margin-bottom: 5rem;
 }
 
-.footer--grid {
+.footer .grid--footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 8vw 18vw auto 18vw 8vw;
@@ -1167,21 +1167,21 @@ section {
 }
 
 @media only screen and (max-width: 1440px) {
-  .footer--grid {
+  .footer .grid--footer {
     -ms-grid-columns: 7.8rem 20vw auto 20vw 7.8rem;
         grid-template-columns: 7.8rem 20vw auto 20vw 7.8rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .footer--grid {
+  .footer .grid--footer {
     -ms-grid-columns: 5rem auto 5rem;
         grid-template-columns: 5rem auto 5rem;
   }
 }
 
 @media only screen and (max-width: 470px) {
-  .footer--grid {
+  .footer .grid--footer {
     -ms-grid-columns: 3rem auto 3rem;
         grid-template-columns: 3rem auto 3rem;
   }

@@ -495,7 +495,7 @@ section {
         }
     }
 
-    &--grid {
+    .grid--footer {
         display: grid;
         grid-template-columns: 8vw 18vw auto 18vw 8vw;
         grid-auto-rows: auto;
